@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Bordered form */
+
+body {
+    position: relative;
+    /*
+    width: 1000px;
+    height: 421px;
+    */
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    /*background: linear-gradient(69.47deg, #63A583 0%, #6E93D6 100%);*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(69.47deg, #63A583 0%, #6E93D6 100%);
+    border-radius: 10px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* inputs */
+
+label {
+    text-align: right;
+    margin-right: 15px;
+}
+
+input[type=text],
+input[type=password] {
+    right: 20px;
+    top: 139px;
+    width: 105px;
+    height: 25px;
+    margin: 15px 0px;
+    margin-left: 15px;
+    /*display: inline-block;*/
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+
+/* Set a style for buttons */
+
+button {
+    background-color: #E4DBD9;
+    color: #000000;
+    padding: 5px 10px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: Montserrat;
+}
+
+
+/* Add a hover effect for buttons */
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Add padding to containers */
+
+.container {
+    padding: 16px;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 1000px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
